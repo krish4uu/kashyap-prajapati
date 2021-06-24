@@ -1,3 +1,3 @@
 # portfolio
 
-The portfolio is live here: https://kashyapprajapati-portfolio.herokuapp.com
+The portfolio is live here: https://www.kashyapprajapati.com
