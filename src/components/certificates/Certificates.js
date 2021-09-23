@@ -3,11 +3,12 @@ import { Container, Row, Col } from "react-bootstrap";
 import CertiCard from "./CertiCards";
 import Tilt from "react-parallax-tilt";
 import Particle from "../Particle";
-
 import google from "../../Assets/certificates/google.png";
 import pdfgoogle from "../../Assets/certificates/google.pdf";
 import IBM from "../../Assets/certificates/IBM.png";
 import pdfIBM from "../../Assets/certificates/IBM.pdf";
+import microsoft from "../../Assets/certificates/microsoft.png";
+import microsoftAi from "../../Assets/certificates/microsoft-ai.png";
 import webdev from "../../Assets/certificates/web-dev.png";
 import pdfwebdev from "../../Assets/certificates/web-dev.pdf";
 import python from "../../Assets/certificates/Python.png";
@@ -22,10 +23,10 @@ function Certificates() {
     <Container fluid className="project-section">
       <Particle />
       <Container>
-      <Tilt>
-        <h1 className="project-heading">
-          The<strong className="blue"> Certificates </strong>
-        </h1>
+        <Tilt>
+          <h1 className="project-heading">
+            The<strong className="blue"> Certificates </strong>
+          </h1>
         </Tilt>
         {/* <p style={{ color: "white" }}>
           Here are a few projects I've worked on.
@@ -33,10 +34,20 @@ function Certificates() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <CertiCard
+              imgPath={microsoft}
+              isBlog={false}
+              title="Microsoft"
+              description="Microsoft Azure AI fundamentals"
+              link={microsoftAi}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <CertiCard
               imgPath={IBM}
               isBlog={false}
               title="IBM"
-              description="Developing Cloud Apps with Node.js and React."
+              description="Developing Cloud Apps with Node.js and React"
               link={pdfIBM}
             />
           </Col>
@@ -72,7 +83,6 @@ function Certificates() {
             />
           </Col>
 
-
           <Col md={4} className="project-card">
             <CertiCard
               imgPath={program}
@@ -92,10 +102,7 @@ function Certificates() {
               link={pdfst}
             />
           </Col>
-
-
         </Row>
-
       </Container>
     </Container>
   );

@@ -12,13 +12,17 @@ function Home2() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-           <Tilt> <h1 style={{ fontSize: "2.6em" }}>
-          A LITTLE <span className="blue">INTRODUCTION</span>
-            </h1>
+            <Tilt>
+              {" "}
+              <h1 style={{ fontSize: "2.6em" }}>
+                A LITTLE <span className="blue">INTRODUCTION</span>
+              </h1>
             </Tilt>
             <p className="home-about-body">
-              I got interest in programming after 10th, and then got admission in the bachalor's in computer major.
-              I didn't stop there and took admission for masters in Canada for the same feild. So, I know something about web dev I think... 🤷‍♂️
+              I got interest in programming after 10th, and then got admission
+              in the bachalor's in computer major. I didn't stop there and took
+              admission for masters in Canada for the same feild. So, I know
+              something about web dev I think... 🤷‍♂️
               <br />
               <br />I have knowledge about
               <i>
@@ -29,12 +33,10 @@ function Home2() {
               My field of Interest's are building new &nbsp;
               <i>
                 <b className="blue">Web Applications</b>
-                </i>
-                &nbsp; and also in areas related to{" "}
-                <i>
-                <b className="blue">
-                  Software Engineering.
-                </b>
+              </i>
+              &nbsp; and also in areas related to{" "}
+              <i>
+                <b className="blue">Software Engineering.</b>
               </i>
               <br />
               <br />
@@ -49,9 +51,14 @@ function Home2() {
               </i>
             </p>
           </Col>
-          <Col md={4} className="myAvtar" >
+          <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} style={{borderRadius: 50}} className="img-fluid" alt="avatar" />
+              <img
+                src={myImg}
+                style={{ borderRadius: 50 }}
+                className="img-fluid"
+                alt="avatar"
+              />
             </Tilt>
           </Col>
         </Row>
@@ -86,8 +93,7 @@ function Home2() {
 
               <li className="social-icons">
                 <a
-
-                href="mailto: prajapatikashyap97@gmail.com"
+                  href="mailto: prajapatikashyap97@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -95,7 +101,6 @@ function Home2() {
                   <MdEmail />
                 </a>
               </li>
-
             </ul>
           </Col>
         </Row>

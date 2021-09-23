@@ -1,8 +1,7 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgb(20, 16, 110)
-    rgba(12, 8, 24, 0.904)
+    rgb(20, 16, 110) rgba(12, 8, 24, 0.904)
   );
 
   --image-gradient: linear-gradient(
@@ -94,7 +93,7 @@ html {
 
 .navbar-toggler span {
   display: block !important;
-  background-color:  #5eaace !important;
+  background-color: #5eaace !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -191,7 +190,7 @@ html {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background:#5eaace;
+  background: #5eaace;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -254,7 +253,6 @@ html {
 .home-section {
   position: relative;
   z-index: -1;
-
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -283,12 +281,12 @@ html {
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color:#5eaace !important;
+  color: #5eaace !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color:#5eaace !important;
+  color: #5eaace !important;
 }
 
 @media (max-width: 767px) {
@@ -305,7 +303,6 @@ html {
 .myAvtar {
   justify-content: center !important;
   padding-top: 13.3em !important;
-
 }
 
 @media (max-width: 767px) {
@@ -382,7 +379,7 @@ html {
 }
 
 .home-social-icons:hover {
-  color:  #5eaace;
+  color: #5eaace;
   box-shadow: 0 0 5px #5eaace;
   text-shadow: 0 0 2px #5eaace;
 }
@@ -437,7 +434,7 @@ html {
 }
 
 .blockquote-footer {
-  color:  #5eaace !important;
+  color: #5eaace !important;
 }
 /* --------- */
 /* Projects */
@@ -516,13 +513,13 @@ html {
 
 .btn-primary {
   color: #fff !important;
-  background-color:#5eaace !important;
-  border-color:#5eaace !important;
+  background-color: #5eaace !important;
+  border-color: #5eaace !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #5eaace!important;
+  background-color: #5eaace !important;
   border-color: #5eaace !important;
 }
 .btn:focus {
@@ -678,7 +675,7 @@ html {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid  #5eaace;
+  border: 2px solid #5eaace;
 }
 
 .like-item {
@@ -688,7 +685,7 @@ html {
 }
 
 .like-btn {
-  background-color:  #5eaace!important;
+  background-color: #5eaace !important;
   border-color: #5eaace !important;
   padding: 0.25rem 0.98rem !important;
   border-radius: 5px !important;
@@ -698,7 +695,7 @@ html {
 
 .like-btn:hover {
   transform: translateY(-2px) !important;
-  background-color:  #5eaace !important;
+  background-color: #5eaace !important;
   border-color: #5eaace !important;
 }
 
@@ -723,7 +720,7 @@ html {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color:  #5eaace !important;
+  background-color: #5eaace !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
@@ -731,8 +728,8 @@ html {
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color:  #5eaace !important;
-  border-color:  #5eaace !important;
+  background-color: #5eaace !important;
+  border-color: #5eaace !important;
 }
 .fork-btn-inner::after {
   display: none !important;
