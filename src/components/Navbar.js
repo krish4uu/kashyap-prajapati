@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import Tilt from "react-parallax-tilt";
+
 
 import { Link } from "react-router-dom";
 
@@ -38,7 +38,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-      <Tilt>
+
         <Navbar.Brand href="/">
         <Nav className="ml-auto" defaultActiveKey="#home">
             <Nav.Item style={{fontSize: "2.5rem"}}>
@@ -48,7 +48,7 @@ function NavBar() {
             </Nav.Item>
             </Nav>
         </Navbar.Brand>
-        </Tilt>
+
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -105,7 +105,7 @@ function NavBar() {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Certificates
               </Nav.Link>
             </Nav.Item>
-        
+
           </Nav>
         </Navbar.Collapse>
       </Container>

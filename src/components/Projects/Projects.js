@@ -19,7 +19,7 @@ function Projects() {
           </h1>
         </Tilt>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on.
+          Here are the projects I've worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
@@ -27,42 +27,38 @@ function Projects() {
               imgPath={nasa}
               isBlog={false}
               title="Spacegram"
-              description="Fetch data from one of NASA’s APIs.
-              Display the resulting images and descriptive data for each retrieved image. Compatible with collected videos as well. Custom CSS for responsive layout.
-              React hooks for button component. Modern date-picker calendar used. Loading component while NASA’s API return data"
+              description="HTML5/CSS3/Javascript/NASA-API/ React/React-hooks/NPM/Git/ Github-pages/ Responsive-layout."
               link="https://github.com/krish4uu/Nasa-Api-ReactApp"
             />
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={keeper}
-              isBlog={false}
-              title="Keeper-app"
-              description="The Keeper-app is basically a early version of adding notes to yourself. The app uses react as a front-end framework. The material-ui is also used in the app.
-              Icon of header and buttons are taken form material-ui-icons.
-              The app does not contain any back-end yet."
-              link="https://github.com/krish4uu/Keeper-app"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
               imgPath={webauth}
               isBlog={false}
               title="Secrets"
-              description="The app is all about the web application where you submit your secrets and you can also see other secrets without knowing their names. 
-              App is focused on getting the user data and storing them into the database with hashing functionality.
-                          Node.js and express.js are used for back-end. It stores the user info using mongoose schema. Passport.js is used for hashing and adding the salt hash to the password for the sake of the security. It supports the google-OAuth."
+              description="HTML5/CSS3/Bootstrap/Javascript/Node.js/Express.js/MongoDB/ Mongoose-schema/Google-OAuth/ passport.js/Responsive-layout"
               link="https://github.com/krish4uu/web-authFile"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={keeper}
+              isBlog={false}
+              title="Keeper-app"
+              description="HTML5/CSS3/Javascript/React/ Responsive-layout/NPM/Git/ material-ui/material-ui-icons."
+              link="https://github.com/krish4uu/Keeper-app"
+            />
+          </Col>
+
+
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={drums}
               isBlog={false}
               title="Drum-kit"
-              description="Drumkit website renders the sounds of various components. It triggers the event listener when mouse is clicked on the given picture. Typing the mentioned keys also trigger the event listener and give same output as clicking the picture."
+              description="HTML5/CSS3/Bootstrap/Javascript/Responsive-layout"
               link="https://github.com/krish4uu/drumkit"
             />
           </Col>

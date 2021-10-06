@@ -26,52 +26,48 @@ function Resume() {
               <h3 className="resume-title">Experience</h3>
             </Tilt>
             <Resumecontent
-              title="WEB DEVELOPER [ AKAR ENTERPRISE ]"
-              date="June 2019 - DECEMBER 2019"
+              title="Full-Stack Developer at Akar Enterprise"
+              date="October 2019 - April 2020"
               content={[
-                " Increased the sell/traffic about 30% after implementing updated content.",
-                " Designed and developed dynamic e-commerce website using HTML/ CSS/ JavaScript/ Node.js/ Bootstrap to buy and sell Hardware and Home appliance",
-                "Implemented customer oriented functionalities like responsive filters for product types, prices and manufacturers, Wishlist, shopping and search based product recommendations, products inventory",
+                "Increased the sell/traffic by about 30% after implementing updated content.",
+                "Designed and developed dynamic E-commerce website using HTML/ CSS/ Bootstrap/ JavaScript/ React/ Node.js to buy and sell Hardware and Home appliance.",
+                "Involved in the complete Development Life Cycle including Requirement Analysis, Design, Implementation, and Testing.",
+                "Implemented customer oriented functionalities like responsive filters for product types, prices and manufacturers, Wishlist, shopping and search history-based product recommendations, products inventory.",
               ]}
             />
 
             <Resumecontent
-              title="Web Developer Intern [ INNVONI ]"
-              date="January 2019 - june 2019"
+              title="Full-Stack Developer Intern at Simulas"
+              date="January 2019 - August 2019"
               content={[
-                " Elevated website performance by 20% after updating existing websites using HTML/ CSS/ JavaScript",
-                "Developed site content and graphics by coordinating with other teams",
-                "Designed images, icons, banners, audio enhancements, etc.",
-                "Revise, edit and optimize web content",
-                "Perform code reviews, testing, and continuous integration",
+                "Worked on multiple full stack E-commerce projects in React/ Node.js.",
+                "Collaborated with UI/UX team to implement improved design.",
+                "Enhanced several modules such as User Profile, Payment Gateway implementation and User Feedbacks.",
+                "Generated unit test cases and performed the integration testing after the modules were integrated.",
+                "Participated in code reviews, resolved bugs & issues, and ship code on a daily basis.",
               ]}
             />
 
             <Resumecontent
-              title="VOLUNTEER WEB DEVELOPER [ YUVA NGO ]"
-              date="JANUARY 2019 -  MAY 2020"
+              title="Web Developer Intern at Innvoni"
+              date="May 2018 - December 2018"
+              content={[
+                "Elevated website performance by 20% after updating existing websites using HTML/ CSS/ JavaScript.",
+                "Developed site content and graphics by coordinating with other teams.",
+                "Revised and edited web content. Performed code reviews, testing, and continuous integration",
+              ]}
+            />
+
+            <Resumecontent
+              title="Volunteer Web Developer at YUVA NGO"
+              date="January 2019 -  May 2020"
               content={[
                 "Designed and developed dynamic website for an NGO using HTML, CSS, JavaScript, EJS6, Node.js, Bootstrap.",
                 "It had features like new events notifications, members and volunteers profile, donation portal. Also added the social work done in the past with photos and a little description in carousel using Bootstrap and added grid.",
               ]}
             />
 
-            <Tilt>
-              <h3 className="resume-title">Extracurricular Activities</h3>
-            </Tilt>
-            <Resumecontent
-              title="COORDINATOR [ Technosonic-2017, GEC-Patan ]"
-              content={[
-                "Worked on creating the techinal event where participants used their prefered programming language to solve the problem.",
-              ]}
-            />
-            <Resumecontent
-              title="Cricket Team Captain [ Gujarat Technological University ]"
-              content={[
-                "Represented the college team at the state level championship tournament.",
-                "Took some tough decisions in pressure situations, and that lead the team into the semifinals of the tournament. ",
-              ]}
-            />
+
           </Col>
           <Col md={6} className="resume-right">
             <Tilt>
@@ -97,6 +93,25 @@ function Resume() {
               date="2002 - 2012"
               content={["Precentage: 88%"]}
             />
+
+
+            <Tilt>
+              <h3 className="resume-title">Extracurricular Activities</h3>
+            </Tilt>
+            <Resumecontent
+              title="COORDINATOR [ Technosonic-2017, GEC-Patan ]"
+              content={[
+                "Worked on creating the techinal event where participants used their prefered programming language to solve the problem.",
+              ]}
+            />
+            <Resumecontent
+              title="Cricket Team Captain [ Gujarat Technological University ]"
+              content={[
+                "Represented the college team at the state level championship tournament.",
+                "Took some tough decisions in pressure situations, and that lead the team into the semifinals of the tournament. ",
+              ]}
+            />
+
             <Tilt>
               <h3 className="resume-title">Non-tech Skills</h3>
             </Tilt>

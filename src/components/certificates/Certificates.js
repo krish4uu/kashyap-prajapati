@@ -15,8 +15,8 @@ import python from "../../Assets/certificates/Python.png";
 import pdfpython from "../../Assets/certificates/Python.pdf";
 import program from "../../Assets/certificates/program.png";
 import pdfprogram from "../../Assets/certificates/program.pdf";
-import st from "../../Assets/certificates/ST.png";
-import pdfst from "../../Assets/certificates/ST.pdf";
+// import st from "../../Assets/certificates/ST.png";
+// import pdfst from "../../Assets/certificates/ST.pdf";
 
 function Certificates() {
   return (
@@ -28,9 +28,6 @@ function Certificates() {
             The<strong className="blue"> Certificates </strong>
           </h1>
         </Tilt>
-        {/* <p style={{ color: "white" }}>
-          Here are a few projects I've worked on.
-        </p> */}
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <CertiCard
@@ -41,7 +38,6 @@ function Certificates() {
               link={microsoftAi}
             />
           </Col>
-
           <Col md={4} className="project-card">
             <CertiCard
               imgPath={IBM}
@@ -51,7 +47,6 @@ function Certificates() {
               link={pdfIBM}
             />
           </Col>
-
           <Col md={4} className="project-card">
             <CertiCard
               imgPath={google}
@@ -62,7 +57,6 @@ function Certificates() {
               link={pdfgoogle}
             />
           </Col>
-
           <Col md={4} className="project-card">
             <CertiCard
               imgPath={webdev}
@@ -72,7 +66,6 @@ function Certificates() {
               link={pdfwebdev}
             />
           </Col>
-
           <Col md={4} className="project-card">
             <CertiCard
               imgPath={python}
@@ -82,7 +75,6 @@ function Certificates() {
               link={pdfpython}
             />
           </Col>
-
           <Col md={4} className="project-card">
             <CertiCard
               imgPath={program}
@@ -90,16 +82,6 @@ function Certificates() {
               title="Programming"
               description="Programming Fundamentals"
               link={pdfprogram}
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <CertiCard
-              imgPath={st}
-              isBlog={false}
-              title="ST"
-              description="Strategic Thinking"
-              link={pdfst}
             />
           </Col>
         </Row>
