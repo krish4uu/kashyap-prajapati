@@ -1,3 +1,3 @@
 # portfolio
 
-The portfolio is live here: [Kashyap Prajapati](https://www.kashyapprajapati.com)
+Please visit 👉 [kashyapprajapati.com](https://www.kashyapprajapati.com) 
