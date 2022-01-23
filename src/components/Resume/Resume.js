@@ -66,8 +66,6 @@ function Resume() {
                 "It had features like new events notifications, members and volunteers profile, donation portal. Also added the social work done in the past with photos and a little description in carousel using Bootstrap and added grid.",
               ]}
             />
-
-
           </Col>
           <Col md={6} className="resume-right">
             <Tilt>
@@ -75,13 +73,13 @@ function Resume() {
             </Tilt>
             <Resumecontent
               title="Master's of Electrical and Computer Engineering [University Of Windsor, Canada] "
-              date="2020 - Present"
-              content={["GPA: 3.4/4"]}
+              date="2020 - 2022"
+              content={["GPA: 3.5/4"]}
             />
             <Resumecontent
               title="Bachelor's of Computer Engineering [Gujarat Technological University, India] "
               date="2014 - 2018"
-              content={["CGPA: 7.7/10 "]}
+              content={["CGPA: 3.4/4 "]}
             />
             <Resumecontent
               title="12TH BOARD [Gujarat Higher Education Board]"
@@ -93,7 +91,6 @@ function Resume() {
               date="2002 - 2012"
               content={["Precentage: 88%"]}
             />
-
 
             <Tilt>
               <h3 className="resume-title">Extracurricular Activities</h3>
