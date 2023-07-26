@@ -1,5 +1,6 @@
 export const resumeDetail = [
   {
+    id: 1,
     title: "Full stack Engineer at Elastic Path",
     date: "April 2022 - April 2023",
     content: [
@@ -12,6 +13,7 @@ export const resumeDetail = [
     ],
   },
   {
+    id: 2,
     title: "Full stack Developer at Akar Infosoft",
     date: "October 2019 - April 2020",
     content: [
@@ -23,6 +25,7 @@ export const resumeDetail = [
     ],
   },
   {
+    id: 3,
     title: "Full stack Developer Intern at Simulas",
     date: "January 2019 - August 2019",
     content: [

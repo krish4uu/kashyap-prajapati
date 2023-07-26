@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import Particle from "../Particle";
 import ResumeContent from "./ResumeContent";
 import Tilt from "react-parallax-tilt";
 
@@ -12,15 +11,13 @@ import { resumeDetail } from "../../resume-detail";
 function Resume() {
   return (
     <Container fluid className="resume-section">
-      <Particle />
       <Container>
-        <Row
-          style={{ justifyContent: "center", position: "relative", margin: 30 }}
-        >
-          <Button variant="primary" href={pdf} target="_blank">
+        <div style={{ marginTop: 30, paddingTop: 20 }}>
+          <Button variant="primary" href={pdf} target="_blank" size="sm">
             <AiOutlineDownload /> &nbsp;Download CV
           </Button>
-        </Row>
+        </div>
+
         <Row className="resume">
           <Col md={6} className="resume-left">
             <Tilt>
@@ -29,6 +26,7 @@ function Resume() {
             {resumeDetail.map((item) => {
               return (
                 <ResumeContent
+                  key={item.id}
                   title={item.title}
                   date={item.date}
                   content={item.content}
@@ -92,12 +90,11 @@ function Resume() {
             />
           </Col>
         </Row>
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button variant="primary" href={pdf} target="_blank">
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-        </Row>
+
+        <Button variant="primary" href={pdf} target="_blank" size="sm">
+          <AiOutlineDownload />
+          &nbsp;Download CV
+        </Button>
       </Container>
     </Container>
   );

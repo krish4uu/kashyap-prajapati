@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import CertiCard from "./CertiCards";
 import Tilt from "react-parallax-tilt";
-import Particle from "../Particle";
+
 import google from "../../Assets/certificates/google.png";
 import pdfgoogle from "../../Assets/certificates/google.pdf";
 import IBM from "../../Assets/certificates/IBM.png";
@@ -21,7 +21,6 @@ import pdfprogram from "../../Assets/certificates/program.pdf";
 function Certificates() {
   return (
     <Container fluid className="project-section">
-      <Particle />
       <Container>
         <Tilt>
           <h1 className="project-heading">
