@@ -3,11 +3,9 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 
-
 import { Link } from "react-router-dom";
 
 import {
-
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
@@ -38,15 +36,14 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-
         <Navbar.Brand href="/">
-        <Nav className="ml-auto" defaultActiveKey="#home">
-            <Nav.Item style={{fontSize: "2.5rem"}}>
+          <Nav className="ml-auto" defaultActiveKey="#home">
+            <Nav.Item style={{ fontSize: "2.5rem" }}>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
                 <Gi3DGlasses style={{ marginBottom: "2px" }} /> KP
               </Nav.Link>
             </Nav.Item>
-            </Nav>
+          </Nav>
         </Navbar.Brand>
 
         <Navbar.Toggle
@@ -105,7 +102,6 @@ function NavBar() {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Certificates
               </Nav.Link>
             </Nav.Item>
-
           </Nav>
         </Navbar.Collapse>
       </Container>

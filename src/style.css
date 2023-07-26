@@ -654,7 +654,7 @@ html {
 
 .resume .resume-item ul {
   padding-left: 20px;
-  text-align: left;
+  text-align: justify;
 }
 
 .resume .resume-item ul li {

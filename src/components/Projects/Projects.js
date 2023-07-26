@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Tilt from "react-parallax-tilt";
-import Particle from "../Particle";
 import webauth from "../../Assets/Projects/web-auth.png";
 import drums from "../../Assets/Projects/drums.png";
 import keeper from "../../Assets/Projects/keeper.png";
@@ -13,7 +12,6 @@ import LinkApp from "../../Assets/Projects/Link-short.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
-      <Particle />
       <Container>
         <Tilt>
           <h1 className="project-heading">

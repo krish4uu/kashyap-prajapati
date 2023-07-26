@@ -7,12 +7,13 @@ import Projects from "./components/Projects/Projects";
 import Certificates from "./components/certificates/Certificates";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/Resume";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import ScrollToTop from "./components/ScrollToTop";
+import Particle from "./components/Particle";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -23,22 +24,25 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar />
-        <ScrollToTop />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/project" component={Projects} />
-          <Route path="/about" component={About} />
-          <Route path="/resume" component={Resume} />
-          <Route path="/certificates" component={Certificates} />
-        </Switch>
-       
-        <Footer />
-      </div>
-    </Router>
+    <>
+      <Particle />
+      <Router>
+        <Preloader load={load} />
+        <div className="App" id={load ? "no-scroll" : "scroll"}>
+          <Navbar />
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" exact element={<Home />} />
+            <Route path="/project" element={<Projects />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/certificates" element={<Certificates />} />
+          </Routes>
+
+          <Footer />
+        </div>
+      </Router>
+    </>
   );
 }
 

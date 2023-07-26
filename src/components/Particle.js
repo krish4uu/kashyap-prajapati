@@ -1,104 +1,57 @@
 import React from "react";
-import Particles from "react-particles-js";
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+import { useCallback } from "react";
 
 function Particle() {
+  const particlesInit = useCallback(async (engine) => {
+    await loadFull(engine);
+  }, []);
+
+  const options = {
+    particles: {
+      color: {
+        value: "#ffffff",
+      },
+      links: {
+        color: "#ffffff",
+        distance: 150,
+        enable: true,
+        opacity: 0.5,
+        width: 1,
+      },
+      move: {
+        direction: "none",
+        enable: true,
+        outModes: {
+          default: "bounce",
+        },
+        random: false,
+        speed: 2,
+        straight: false,
+      },
+      number: {
+        density: {
+          enable: true,
+          area: 1500,
+        },
+        value: 35,
+      },
+      opacity: {
+        value: 0.5,
+      },
+      shape: {
+        type: "circle",
+      },
+      size: {
+        value: 1,
+      },
+    },
+  };
   return (
-    <Particles
-
-params={{
-	    "particles": {
-	        "number": {
-	            "value": 35,
-              density: {
-              enable: true,
-              value_area: 1500,
-            },
-	        },
-	        "size": {
-	            "value": 1
-	        },
-          opacity: {
-            anim: {
-              enable: true,
-              speed: 4,
-              opacity_min: 0.05,
-            },
-          },
-          move: {
-           speed: 1.4,
-          },
-	    },
-	    // "interactivity": {
-      //   // detect_on: "window",
-	    //     "events": {
-	    //         "onhover": {
-	    //             "enable": true,
-	    //             "mode": "repulse"
-	    //         }
-	    //     },
-          
-	    // }
-	}}
-
-
-      // params={{
-      //   particles: {
-      //     number: {
-      //       value: 160,
-      //       density: {
-      //         enable: true,
-      //         value_area: 1500,
-      //       },
-      //     },
-      //     line_linked: {
-      //       enable: true,
-      //       opacity: 0.03,
-      //     },
-      //     move: {
-      //       direction: "right",
-      //       speed: 0.01,
-      //     },
-      //     size: {
-      //       value: 1,
-      //     },
-      //     opacity: {
-      //       anim: {
-      //         enable: true,
-      //         speed: 1,
-      //         opacity_min: 0.05,
-      //       },
-      //     },
-      //   },
-      //   // interactivity: {
-      //   //   events: {
-      //   //     onclick: {
-      //   //       enable: true,
-      //   //       mode: "push",
-      //   //     },
-      // //   interactivity: {
-	    // //     events: {
-	    // //         onhover: {
-	    // //             enable: true,
-	    // //             mode: "repulse",
-	    // //         },
-      // //         onclick: {
-      // //         enable: true,
-      // //         mode: "push",
-      // //       },
-	    // //     },
-	    // // },
-      //     modes: {
-      //       push: {
-      //         particles_nb: 5,
-      //       },
-      //     },
-      //   },
-
-      //   {
-        
-      //   }
-      // }
-    />
+    <>
+      <Particles options={options} init={particlesInit} />
+    </>
   );
 }
 
