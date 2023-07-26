@@ -22,10 +22,10 @@ function About() {
               paddingBottom: "50px",
             }}
           >
-          <Tilt>
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Who <strong className="blue">I'M !</strong>
-            </h1>
+            <Tilt>
+              <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+                Who <strong className="blue">I'M !</strong>
+              </h1>
             </Tilt>
             <Aboutcard />
           </Col>
@@ -38,23 +38,20 @@ function About() {
           </Col>
         </Row>
         <Tilt>
-        <h1 className="project-heading">
-          Professional <strong className="blue">Skillset </strong>
-        </h1>
+          <h1 className="project-heading">
+            Professional <strong className="blue">Skillset </strong>
+          </h1>
         </Tilt>
         <Techstack />
 
         <Tilt>
-        <h1 className="project-heading">
-          <strong className="blue">Tools</strong> I use
-        </h1>
+          <h1 className="project-heading">
+            <strong className="blue">Tools</strong> I use
+          </h1>
         </Tilt>
         <Toolstack />
-       {/* <Github /> */}
-        
+        {/* <Github /> */}
       </Container>
-
-    
     </Container>
   );
 }
