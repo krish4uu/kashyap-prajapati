@@ -18,38 +18,44 @@ function Home2() {
                 A LITTLE <span className="blue">INTRODUCTION</span>
               </h1>
             </Tilt>
-            <p className="home-about-body">
-              I got interest in programming after 10th, and then got admission
-              in the bachalor's in computer major. I didn't stop there and took
-              admission for masters in Canada for the same feild. So, I know
-              something about web dev I think... 🤷‍♂️
-              <br />
-              <br />I have knowledge about
-              <i>
-                <b className="blue"> C (C++), Javascript and Python. </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="blue">Web Applications</b>
-              </i>
-              &nbsp; and also in areas related to{" "}
-              <i>
-                <b className="blue">Software Engineering.</b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with
-              <i>
-                <b className="blue"> Modern Javascript Frameworks</b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="blue"> Node.js and React.js</b>
-              </i>
-            </p>
+            <div className="home-about-body">
+              Computer Engineer with 3+ years of hands-on experience as a Full
+              Stack Developer with excellent problem-solving and troubleshooting
+              skills. Worked within Agile software development lifecycle and
+              cross-functional teams aiming at delivering quality products
+              <br />&nbsp;
+              <ul>
+                <li>
+                  <b className="blue"> Web Technologies: </b>
+                  HTML, CSS, JavaScript(ES6+), Typescript, Bootstrap, REST API,
+                  GraphQL
+                </li>
+                <li>
+                  <b className="blue"> Frameworks/Tools: </b>
+                  React, NextJS, Angular, Redux, Node.js, Express.js, NPM, Yarn,
+                  Git, Jest, Tailwind
+                </li>
+                <li>
+                  <b className="blue">Programming Languages: </b>
+                  C++, Python, Java
+                </li>
+                <li>
+                  <b className="blue">Cloud/tools: </b>
+                  AWS, GCP, Docker
+                </li>
+                <li>
+                  <b className="blue"> Database/Tools: </b>
+                  MongoDB, Mongoose, SQL, Postgres
+                </li>
+                <li>
+                  <b className="blue">
+                    {" "}
+                    Team Management/communication tools:{" "}
+                  </b>
+                  Slack, Zoom, Trello, Jira, Replicon, Airtable, Gitlab, Github
+                </li>
+              </ul>
+            </div>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
@@ -82,7 +88,7 @@ function Home2() {
 
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/prajapatikashyap/"
+                  href="https://www.linkedin.com/in/prajapatikashyap"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
