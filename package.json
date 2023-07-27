@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://github.com/krish4uu/kashyap-prajapati/#",
+  "homepage": "https://github.com/krish4uu/kashyap-prajapati",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^14.0.0",
