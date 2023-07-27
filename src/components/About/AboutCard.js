@@ -9,7 +9,7 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "left" }}>
             I'm a Full Stack Software Engineer with knowledge of modern techs,
-            having a strong background in computer science fundamentals.The
+            having a strong background in computer science fundamentals. The
             excitement for working with modern design and modern workflow is
             something that I look for in projects.
           </p>
@@ -26,7 +26,7 @@ function AboutCard() {
           </div>
           <span
             className="blockquote-footer"
-            style={{ margin: 5, padding: 10 }}
+            style={{ margin: 10, padding: 20, fontSize: "0.8em", textAlign: "right"}}
           >
             Kashyap Prajapati
           </span>

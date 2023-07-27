@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Tilt from "react-parallax-tilt";
 import webauth from "../../Assets/Projects/web-auth.png";
 import drums from "../../Assets/Projects/drums.png";
 import keeper from "../../Assets/Projects/keeper.png";
@@ -13,11 +12,9 @@ function Projects() {
   return (
     <Container fluid className="project-section">
       <Container>
-        <Tilt>
           <h1 className="project-heading">
             The<strong className="blue"> Projects </strong>
           </h1>
-        </Tilt>
         <p style={{ color: "white" }}>
           Please visit project github link for detailed description
         </p>
@@ -27,7 +24,7 @@ function Projects() {
               imgPath={LinkApp}
               isBlog={false}
               title="React-link-shortner"
-              description="HTML5/CSS3/Javascript/Short-API/React/Context-API/Particle.js/ React-hooks/NPM/Git/Github-pages/ Responsive-layout."
+              description="HTML5/CSS3/Javascript/Short-API/React/Context-API/Particle.js/NPM/Git/Github-pages"
               link="https://github.com/krish4uu/react-link-short-app"
             />
           </Col>
@@ -36,7 +33,7 @@ function Projects() {
               imgPath={MobileApp}
               isBlog={false}
               title="React-native-Mobile-app"
-              description="React-native/React-navigation/Expo-CLI/NPM/Git/Joke-API/Responsive-layout."
+              description="React-native/React-navigation/Expo-CLI/NPM/Git/Joke-API/Responsive-layout/Emulator"
               link="https://github.com/krish4uu/expo-mobile-app"
             />
           </Col>
@@ -45,7 +42,7 @@ function Projects() {
               imgPath={nasa}
               isBlog={false}
               title="Spacegram"
-              description="HTML5/CSS3/Javascript/NASA-API/ React/React-hooks/NPM/Git/ Github-pages/ Responsive-layout."
+              description="HTML5/CSS3/Javascript/NASA-API/React/React-hooks/NPM/Git/Github-pages/Responsive-layout"
               link="https://github.com/krish4uu/Nasa-Api-ReactApp"
             />
           </Col>
@@ -54,7 +51,7 @@ function Projects() {
               imgPath={webauth}
               isBlog={false}
               title="Secrets"
-              description="HTML5/CSS3/Bootstrap/Javascript/Node.js/Express.js/MongoDB/ Mongoose-schema/Google-OAuth/ passport.js/Responsive-layout"
+              description="HTML5/CSS3/Bootstrap/Javascript/Node.js/Express.js/MongoDB/Mongoose/OAuth/passport.js"
               link="https://github.com/krish4uu/web-authFile"
             />
           </Col>
@@ -64,7 +61,7 @@ function Projects() {
               imgPath={keeper}
               isBlog={false}
               title="Keeper-app"
-              description="HTML5/CSS3/Javascript/React/ Responsive-layout/NPM/Git/ material-ui/material-ui-icons."
+              description="HTML5/CSS3/Javascript/React/Responsive-layout/NPM/Git/material-ui/material-ui-icons."
               link="https://github.com/krish4uu/Keeper-app"
             />
           </Col>

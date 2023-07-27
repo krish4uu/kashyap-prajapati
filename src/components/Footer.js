@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {AiFillGithub} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
@@ -21,15 +21,19 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://github.com/krish4uu"
+                target="_blank"
+                rel="noreferrer"
                 style={{ color: "white" }}
               >
                 <AiFillGithub />
               </a>
             </li>
-          
+
             <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/prajapatikashyap"
+                target="_blank"
+                rel="noreferrer"
                 style={{ color: "white" }}
               >
                 <FaLinkedinIn />
@@ -44,7 +48,6 @@ function Footer() {
                 <MdEmail />
               </a>
             </li>
-            
           </ul>
         </Col>
       </Row>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/kp.jpeg";
 import Tilt from "react-parallax-tilt";
@@ -7,23 +7,44 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 function Home2() {
+  const [screenSize, setScreenSize] = useState(getCurrentDimension());
+
+  let tiltEnable = screenSize.width > "830" ? true : false;
+
+  function getCurrentDimension() {
+    return {
+      width: window.innerWidth,
+      height: window.innerHeight,
+    };
+  }
+
+  useEffect(() => {
+    const updateDimension = () => {
+      setScreenSize(getCurrentDimension());
+    };
+    window.addEventListener("resize", updateDimension);
+
+    return () => {
+      window.removeEventListener("resize", updateDimension);
+    };
+  }, [screenSize]);
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <Tilt>
-              {" "}
-              <h1 style={{ fontSize: "2.6em" }}>
-                A LITTLE <span className="blue">INTRODUCTION</span>
-              </h1>
-            </Tilt>
+            <h1 style={{ fontSize: "2.6em" }}>
+              A LITTLE <span className="blue">INTRODUCTION</span>
+            </h1>
+
             <div className="home-about-body">
               Computer Engineer with 3+ years of hands-on experience as a Full
               Stack Developer with excellent problem-solving and troubleshooting
               skills. Worked within Agile software development lifecycle and
               cross-functional teams aiming at delivering quality products
-              <br />&nbsp;
+              <br />
+              &nbsp;
               <ul>
                 <li>
                   <b className="blue"> Web Technologies: </b>
@@ -48,17 +69,14 @@ function Home2() {
                   MongoDB, Mongoose, SQL, Postgres
                 </li>
                 <li>
-                  <b className="blue">
-                    {" "}
-                    Team Management/communication tools:{" "}
-                  </b>
+                  <b className="blue"> Management/communication tools: </b>
                   Slack, Zoom, Trello, Jira, Replicon, Airtable, Gitlab, Github
                 </li>
               </ul>
             </div>
           </Col>
           <Col md={4} className="myAvtar">
-            <Tilt>
+            <Tilt tiltEnable={tiltEnable}>
               <img
                 src={myImg}
                 style={{ borderRadius: 50 }}

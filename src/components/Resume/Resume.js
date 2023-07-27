@@ -2,8 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import ResumeContent from "./ResumeContent";
-import Tilt from "react-parallax-tilt";
-
 import pdf from "../../Assets/Kashyap.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { resumeDetail } from "../../resume-detail";
@@ -20,9 +18,9 @@ function Resume() {
 
         <Row className="resume">
           <Col md={6} className="resume-left">
-            <Tilt>
+ 
               <h3 className="resume-title">Experience</h3>
-            </Tilt>
+
             {resumeDetail.map((item) => {
               return (
                 <ResumeContent
@@ -35,9 +33,9 @@ function Resume() {
             })}
           </Col>
           <Col md={6} className="resume-right">
-            <Tilt>
+
               <h3 className="resume-title">Education</h3>
-            </Tilt>
+
             <ResumeContent
               title="Master's of Electrical and Computer Engineering [University Of Windsor, Canada] "
               date="2020 - 2022"
@@ -59,9 +57,9 @@ function Resume() {
               content={["Percentage: 88%"]}
             />
 
-            <Tilt>
+
               <h3 className="resume-title">Extracurricular Activities</h3>
-            </Tilt>
+
             <ResumeContent
               title="COORDINATOR [ TechnoSonic-2017, GEC-Patan ]"
               content={[
@@ -76,9 +74,9 @@ function Resume() {
               ]}
             />
 
-            <Tilt>
+
               <h3 className="resume-title">Non-tech Skills</h3>
-            </Tilt>
+
             <ResumeContent
               title=""
               content={[

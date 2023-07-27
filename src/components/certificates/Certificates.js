@@ -1,8 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import CertiCard from "./CertiCards";
-import Tilt from "react-parallax-tilt";
-
 import google from "../../Assets/certificates/google.png";
 import pdfgoogle from "../../Assets/certificates/google.pdf";
 import IBM from "../../Assets/certificates/IBM.png";
@@ -22,11 +20,9 @@ function Certificates() {
   return (
     <Container fluid className="project-section">
       <Container>
-        <Tilt>
           <h1 className="project-heading">
             The<strong className="blue"> Certificates </strong>
           </h1>
-        </Tilt>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <CertiCard
@@ -61,7 +57,7 @@ function Certificates() {
               imgPath={webdev}
               isBlog={false}
               title="Web Development"
-              description="The Complete Web Development 2021 Bootcamp"
+              description="Bootcamp"
               link={pdfwebdev}
             />
           </Col>
@@ -70,7 +66,7 @@ function Certificates() {
               imgPath={python}
               isBlog={false}
               title="Python"
-              description="Learning Python"
+              description="Fundamentals"
               link={pdfpython}
             />
           </Col>
@@ -79,7 +75,7 @@ function Certificates() {
               imgPath={program}
               isBlog={false}
               title="Programming"
-              description="Programming Fundamentals"
+              description="Fundamentals"
               link={pdfprogram}
             />
           </Col>
