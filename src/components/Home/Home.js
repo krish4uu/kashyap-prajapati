@@ -4,12 +4,10 @@ import homeLogo from "../../Assets/home-main.svg";
 import Home2 from "./Home2";
 import Type from "./Type";
 
-
 function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
