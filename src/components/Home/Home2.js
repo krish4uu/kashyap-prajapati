@@ -39,10 +39,11 @@ function Home2() {
             </h1>
 
             <div className="home-about-body">
-              Computer Engineer with 3+ years of hands-on experience as a Full
-              Stack Developer with excellent problem-solving and troubleshooting
-              skills. Worked within Agile software development lifecycle and
-              cross-functional teams aiming at delivering quality products
+              Highly skilled Computer Engineer with over 3 years of hands-on
+              experience as a Full Stack Developer, adept at problem-solving
+              and troubleshooting. Proficient in Agile software development
+              methodologies and collaborating with cross-functional teams to
+              deliver high-quality products.
               <br />
               &nbsp;
               <ul>
